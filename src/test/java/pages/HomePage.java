@@ -12,5 +12,10 @@ public class HomePage {
         PageFactory.initElements(this.driver, this);
     }
 
+    public void getURL() {
+        driver.get("http://www.tapqa.com");
+    }
+
+
 
 }

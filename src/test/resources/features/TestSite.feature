@@ -1,8 +1,8 @@
-Feature: Searching for a site on Google
+Feature: tapQA HomePage Navigation Menu
 
-  Scenario: Successful Search
-    Given I am navigating to Google
-    When I enter my websites name
+  Scenario: Solutions Menu Check tapStrategy Link
+    Given I am navigating to tapQA HomePage
+    When I hover over the Solutions tab
     And I click on search
     Then I should see my site in the results
 
