@@ -36,6 +36,24 @@ public class HomePage {
     @FindBy(how = How.ID, using = "menu-item-1871")
     public static WebElement menuSolutionsTapLakeshore;
 
+    public WebElement getSelector(String selector) {
+
+        switch (selector.toUpperCase()) {
+            case "MENU SOLUTIONS":
+                return menuSolutions;
+            case "TAP STRATEGY":
+                return menuSolutionsTapStrategy;
+            case "TAP AUTOMATION":
+                return menuSolutionsTapAutomation;
+            case "TAP CONSULTING":
+                return menuSolutionsTapConsulting;
+            case "TAP LAKESHORE":
+                return menuSolutionsTapLakeshore;
+            default:
+                throw new IllegalArgumentException(String.format("Could not get element by name: %s. Is it implemented?", selector));
+        }
+    }
+
 
     public void getURL() {
         driver.get("http://www.tapqa.com");

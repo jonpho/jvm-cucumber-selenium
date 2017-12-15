@@ -1,5 +1,6 @@
 Feature: tapQA HomePage Navigation Menu
 
+  @test1
   Scenario: Solutions Menu Check tapStrategy Link
     Given I am navigating to tapQA HomePage
     When I hover over the Solutions tab
