@@ -10,12 +10,13 @@ import org.testng.Assert;
 
 import java.util.concurrent.TimeUnit;
 
-public class HomePage {
+public class HomePage extends BasePage {
 
     private WebDriver driver;
     private Actions action;
 
     public HomePage(WebDriver driver) {
+        super(driver);
         this.driver = driver;
         this.action = new Actions(driver);
         PageFactory.initElements(this.driver, this);
