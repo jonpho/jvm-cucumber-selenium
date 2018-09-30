@@ -11,11 +11,13 @@ import org.openqa.selenium.support.ui.Select;
 import static java.util.concurrent.TimeUnit.MILLISECONDS;
 import static java.util.concurrent.TimeUnit.SECONDS;
 
-public class BasePage {
+public class PageObject {
 
     private WebDriver driver;
 
-    public BasePage(WebDriver driver) {
+    private String url;
+
+    public PageObject(WebDriver driver) {
         this.driver = driver;
         PageFactory.initElements(this.driver, this);
     }

@@ -7,6 +7,8 @@ import org.openqa.selenium.WebDriver;
 import pages.HomePage;
 import support.Hooks;
 
+import static utilities.Config.BASE_URL;
+
 public class HomePageSteps {
 
     private WebDriver driver;
@@ -19,7 +21,7 @@ public class HomePageSteps {
 
     @Given("^I am navigating to tapQA HomePage$")
     public void iAmNavigatingToTapQAHomePage() throws Throwable {
-        page.getURL();
+        driver.get(BASE_URL);
     }
 
     @When("^I hover over the Solutions tab$")
