@@ -10,7 +10,7 @@ import org.testng.Assert;
 
 import java.util.concurrent.TimeUnit;
 
-public class HomePage extends BasePage {
+public class HomePage extends PageObject {
 
     private WebDriver driver;
     private Actions action;
@@ -55,10 +55,6 @@ public class HomePage extends BasePage {
         }
     }
 
-
-    public void getURL() {
-        driver.get("http://www.tapqa.com");
-    }
 
     public void waiting(int time) {
         try {
