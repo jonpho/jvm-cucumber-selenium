@@ -7,9 +7,7 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.Select;
-
-import static java.util.concurrent.TimeUnit.MILLISECONDS;
-import static java.util.concurrent.TimeUnit.SECONDS;
+import java.time.Duration;
 
 public class PageObject {
 
@@ -28,9 +26,8 @@ public class PageObject {
 
     public void waitForElementToBeVisible(WebElement element) {
         FluentWait wait = new FluentWait(driver)
-                .withTimeout(120, SECONDS)
-                .pollingEvery(100, MILLISECONDS);
-
+                .withTimeout(Duration.ofSeconds(120))
+                .pollingEvery(Duration.ofMillis(100));
         try {
             wait.until(ExpectedConditions.visibilityOf(element));
         } catch (Exception e) {
@@ -40,9 +37,8 @@ public class PageObject {
 
     public void waitForElementToBeVisisble(By element) {
         FluentWait wait = new FluentWait(driver)
-                .withTimeout(120, SECONDS)
-                .pollingEvery(100, MILLISECONDS);
-
+                .withTimeout(Duration.ofSeconds(120))
+                .pollingEvery(Duration.ofMillis(100));
         try {
             wait.until(ExpectedConditions.visibilityOf(driver.findElement(element)));
         } catch (Exception e) {
@@ -52,9 +48,8 @@ public class PageObject {
 
     public void waitForPresenceOfElement(By element) {
         FluentWait wait = new FluentWait(driver)
-                .withTimeout(120, SECONDS)
-                .pollingEvery(100, MILLISECONDS);
-
+                .withTimeout(Duration.ofSeconds(120))
+                .pollingEvery(Duration.ofMillis(100));
         try {
             wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(element));
         } catch (Exception e) {
@@ -64,9 +59,8 @@ public class PageObject {
 
     public void waitForElementToBeClickable(WebElement element) {
         FluentWait wait = new FluentWait(driver)
-                .withTimeout(120, SECONDS)
-                .pollingEvery(100, MILLISECONDS);
-
+                .withTimeout(Duration.ofSeconds(120))
+                .pollingEvery(Duration.ofMillis(100));
         try {
             wait.until(ExpectedConditions.elementToBeClickable(element));
         } catch (Exception e) {
@@ -76,9 +70,8 @@ public class PageObject {
 
     public void waitForElementToBeClickable(By element) {
         FluentWait wait = new FluentWait(driver)
-                .withTimeout(120, SECONDS)
-                .pollingEvery(100, MILLISECONDS);
-
+                .withTimeout(Duration.ofSeconds(120))
+                .pollingEvery(Duration.ofMillis(100));
         try {
             wait.until(ExpectedConditions.elementToBeClickable(element));
         } catch (Exception e) {
