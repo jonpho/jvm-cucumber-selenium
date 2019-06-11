@@ -15,5 +15,5 @@ Feature: tapQA HomePage Navigation Menu
     | SubMenu           | id            |
     | "tap\|STRATEGY"   | "STRATEGY"    |
     | "tap\|AUTOMATION" | "AUTOMATION"  |
-    | "tap\|CONSULTING" | "CONSULTING"  |
+    | "tap\|STAFFAUG"   | "STAFFAUG"    |
     | "tap\|LAKESHORE"  | "LAKESHORE"   |
