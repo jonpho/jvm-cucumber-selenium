@@ -22,19 +22,19 @@ public class HomePage extends PageObject {
         PageFactory.initElements(this.driver, this);
     }
 
-    @FindBy(how = How.ID, using = "menu-item-26")
+    @FindBy(how = How.ID, using = "menu-item-3880")
     public static WebElement menuSolutions;
 
-    @FindBy(how = How.ID, using = "menu-item-1868")
+    @FindBy(how = How.ID, using = "menu-item-3881")
     public static WebElement menuSolutionsTapStrategy;
 
-    @FindBy(how = How.ID, using = "menu-item-1869")
+    @FindBy(how = How.ID, using = "menu-item-3882")
     public static WebElement menuSolutionsTapAutomation;
 
-    @FindBy(how = How.ID, using = "menu-item-1870")
-    public static WebElement menuSolutionsTapConsulting;
+    @FindBy(how = How.ID, using = "menu-item-3883")
+    public static WebElement menuSolutionsTapStaffAug;
 
-    @FindBy(how = How.ID, using = "menu-item-1871")
+    @FindBy(how = How.ID, using = "menu-item-3884")
     public static WebElement menuSolutionsTapLakeshore;
 
     public WebElement getSelector(String selector) {
@@ -46,8 +46,8 @@ public class HomePage extends PageObject {
                 return menuSolutionsTapStrategy;
             case "TAP AUTOMATION":
                 return menuSolutionsTapAutomation;
-            case "TAP CONSULTING":
-                return menuSolutionsTapConsulting;
+            case "TAP STAFFAUG":
+                return menuSolutionsTapStaffAug;
             case "TAP LAKESHORE":
                 return menuSolutionsTapLakeshore;
             default:
@@ -89,8 +89,8 @@ public class HomePage extends PageObject {
             case "AUTOMATION":
                 verifyMenuItem(menuItem, menuSolutionsTapAutomation);
                 break;
-            case "CONSULTING":
-                verifyMenuItem(menuItem, menuSolutionsTapConsulting);
+            case "STAFFAUG":
+                verifyMenuItem(menuItem, menuSolutionsTapStaffAug);
                 break;
             case "LAKESHORE":
                 verifyMenuItem(menuItem, menuSolutionsTapLakeshore);

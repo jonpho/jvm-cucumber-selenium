@@ -26,7 +26,7 @@ public class Hooks {
         config.loadProperties(ENV);
         driver = DriverFactory.getDriver(BROWSER);
         driver.manage().window().setSize(new Dimension(1600, 1050));
-        driver.manage().window().maximize();
+//        driver.manage().window().maximize();
 //        driver.get(BASE_URL);
     }
 
