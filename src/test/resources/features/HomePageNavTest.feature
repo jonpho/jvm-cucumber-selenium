@@ -6,6 +6,7 @@ Feature: tapQA HomePage Navigation Menu
     When I hover over the Solutions tab
     Then I verify that the "tap|STRATEGY" menu is displayed
 
+  @test2
   Scenario Outline: Solutions Menu Verify all Sub Menu's appear properly
     Given I am navigating to tapQA HomePage
     When I hover over the Solutions tab
