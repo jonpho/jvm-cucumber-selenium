@@ -4,6 +4,7 @@ import cucumber.api.java.After;
 import cucumber.api.java.Before;
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import utilities.Config;
 import utilities.DriverFactory;
 
@@ -25,9 +26,8 @@ public class Hooks {
     public void beforeScenario() {
         config.loadProperties(ENV);
         driver = DriverFactory.getDriver(BROWSER);
-        driver.manage().window().setSize(new Dimension(1600, 1050));
-//        driver.manage().window().maximize();
-//        driver.get(BASE_URL);
+//        driver.manage().window().setSize(new Dimension(1600, 1050));
+        driver.manage().window().maximize();
     }
 
     @After
