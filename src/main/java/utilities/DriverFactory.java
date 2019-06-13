@@ -16,6 +16,7 @@ public class DriverFactory {
                 System.setProperty("webdriver.chrome.driver", "./src/main/java/utilities/browsers/chromedriver");
                 return new ChromeDriver();
             case "firefox":
+                System.setProperty("webdriver.gecko.driver", "./src/main/java/utilities/browsers/geckodriver");
                 return new FirefoxDriver();
         }
         return null;
