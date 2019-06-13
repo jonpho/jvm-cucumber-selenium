@@ -26,8 +26,10 @@ public class Hooks {
     public void beforeScenario() {
         config.loadProperties(ENV);
         driver = DriverFactory.getDriver(BROWSER);
-//        driver.manage().window().setSize(new Dimension(1600, 1050));
         driver.manage().window().maximize();
+//        If Maximize crashes the framework comment out the maximize line and use the setSize method below.
+//        driver.manage().window().setSize(new Dimension(1600, 1050));
+
     }
 
     @After
